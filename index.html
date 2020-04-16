@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Определение метаданных страницы: контент, кодировка-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!--Определение титульного названия страницы-->
+        <title>РАБОТАЙ БЛИН БЛИНСКИЙ</title>
+        
+         <style>
+    .centered {
+      position: fixed;
+      top: 40%;
+      left: 80%;
+      width: 600px;
+      height:200px;
+      margin: -100px 0 0 -300px;
+          }
+    .dorova {      
+      margin-left: -8px;
+      margin-top: -8px;
+      position: absolute;
+      width: 100%;
+      height:100%;
+        background-image: url(%D1%80%D0%B8%D0%BA%20%D0%B7%D0%BB%D0%BE%D0%B9.png)
+      }
+  </style>
+        
+    </head>
+
+    <!--Подключение выполняемого javascript скрипта-->
+    <script src="script.js"></script>
+
+    <body>
+        <div class="dorova">
+		  <div class="centered">
+            <h3>Формула логики высказываний:</h3>
+
+
+            <form>
+                <input type="text" id="formula" placeholder="Введите формулу..." required>
+                <input type="button" value="проверить на СДНФ" onclick="run()">
+                 <a сlass="submitButton" href="quest.html">Тестовый режим</a>
+            </form>
+
+            <br>
+
+            <!--Ответ: является ли строка формулой логики высказываний-->
+            <h2>Ответ: <span id="answer1"></span></h2>
+
+           
+        </div>
+            </div>
+    </body>
+</html>
